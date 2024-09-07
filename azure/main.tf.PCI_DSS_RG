@@ -1,0 +1,43 @@
+# Terraform block to specify the required provider
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "4.1.0" # Specify your Azure provider version
+    }
+  }
+}
+
+# Configure the Azure provider (uses Azure CLI authentication)
+provider "azurerm" {
+  features {
+    resource_group {
+      prevent_deletion_if_contains_resources = false
+    }
+  }
+
+  subscription_id = "85daa62a-9a76-45aa-9595-003c8bfb49c7"
+}
+
+# # Fetch an existing resource group data (replace with your resource group name)
+# data "azurerm_resource_group" "example" {
+#   name = "PCI_DSS_RG" # Change this to your resource group name
+# }
+
+# # # Output the fetched resource group information for confirmation
+# # output "resource_group_info" {
+# #   value = data.azurerm_resource_group.example
+# # }
+
+# # Define the resource group you want to delete
+# # Ensure to comment out or remove this block when applying deletion.
+# # resource "azurerm_resource_group" "example" {
+# #   name     = data.azurerm_resource_group.example.name
+# #   location = data.azurerm_resource_group.example.location
+# # }
+
+# # Define the resource group to manage
+# resource "azurerm_resource_group" "example" {
+#   name     = "PCI_DSS_RG" # Ensure this matches the existing resource group name
+#   location = "eastus"     # Use the correct location
+# }
