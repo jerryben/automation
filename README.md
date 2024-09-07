@@ -1,6 +1,6 @@
 # DevOps Automation Projects Repository
 
-![DevOps Automation](https://img.shields.io/badge/DevOps-Automation-blue?style=flat-square) ![Terraform](https://img.shields.io/badge/Terraform-v1.5+-blueviolet?style=flat-square)![Ansible](https://img.shields.io/badge/Ansible-v2.9+-red?style=flat-square)
+![DevOps Automation](https://img.shields.io/badge/DevOps-Automation-blue?style=flat-square) ![Terraform](https://img.shields.io/badge/Terraform-v1.8+-blueviolet?style=flat-square)![Ansible](https://img.shields.io/badge/Ansible-v2.10+-red?style=flat-square)
 
 Welcome to my DevOps Automation Projects Repository! This repository serves as a collection of my hands-on exercises and personal projects focused on automating cloud infrastructure and configuration management using Terraform, Ansible, and other DevOps tools.
 
@@ -54,18 +54,18 @@ The repository is organized by cloud providers and automation tools, making it e
 ### Setup
 
 1.  **Clone the repository:**
-    
+
     ```bash
     git clone https://github.com/yourusername/devops-automation.git
     cd devops-automation
     ```
-    
+
 2.  **Install required tools:**
-    
+
     Follow the setup instructions for [Terraform](https://www.terraform.io/downloads.html) and [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html).
-    
+
 3.  **Configure your cloud provider credentials:**
-    
+
     - For AWS: Configure using `aws configure`.
     - For Azure: Login using `az login`.
     - For GCP: Authenticate using `gcloud auth login`.
@@ -80,10 +80,10 @@ Contributions are welcome! If you have improvements, new examples, or other auto
 
 ## 📜 License
 
-This repository is licensed under the MIT License - see the [LICENSE](/tmp/.mount_Joplin3kxc1D/resources/app.asar/LICENSE "LICENSE") file for details.
+This repository is licensed under the MIT License - see the [LICENSE](/tmp/.mount_Joplin3kxc1D/resources/app.asar/LICENSE 'LICENSE') file for details.
 
 ## 📧 Contact
 
 Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/jerrybenoc) or email at jerryben@oracodeltd.com.
 
-* * *
+---
