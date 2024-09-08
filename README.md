@@ -46,8 +46,8 @@ The repository is organized by cloud providers and automation tools, making it e
 
 ### Prerequisites
 
-- **Terraform v1.5+**
-- **Ansible v2.9+**
+- **Terraform v1.8+**
+- **Ansible v2.10+**
 - **Python 3.x** (for Ansible)
 - **Cloud Provider CLI Tools** (AWS CLI, Azure CLI, gcloud)
 
@@ -69,6 +69,7 @@ The repository is organized by cloud providers and automation tools, making it e
     - For AWS: Configure using `aws configure`.
     - For Azure: Login using `az login`.
     - For GCP: Authenticate using `gcloud auth login`.
+    - I used terraform.tfvars in some instances for easier access
 
 ### Running the Scripts
 

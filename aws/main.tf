@@ -7,10 +7,23 @@ terraform {
   }
 }
 
+
 provider "aws" {
-  region     = "region"     # exact region for resources
-  access_key = "access-key" # Generated key
-  secret_key = "secret-key" # Generated secret-key
+  region     = "us-east-1"        # exact region for resources
+  access_key = var.aws_access_key # Generated key
+  secret_key = var.aws_secret_key # Generated secret-key
+}
+
+# Define a variable for the access key
+variable "aws_access_key" {
+  description = "AWS access key"
+  type        = string
+}
+
+# Define a variable for the secret key
+variable "aws_secret_key" {
+  description = "AWS secret key"
+  type        = string
 }
 
 resource "aws_vpc" "dev-vpc" {
@@ -59,11 +72,10 @@ data "aws_vpc" "existing_vpc" {
 }
 
 # Now Use the fetched data to create required resources
-resource "aws_subnet" "dev-repo" {
-  vpc_id            = data.aws_vpc.existing_vpc.id
-  cidr_block        = "10.10.40.0/24"
-  availability_zone = "us-east-1a"
+resource "aws_subnet" "dev-backup-repo" {
+  vpc_id     = data.aws_vpc.existing_vpc.id
+  cidr_block = "10.10.100.0/24"
   tags = {
-    Name : "dev-repo"
+    Name : "dev-backup-repo"
   }
 }
