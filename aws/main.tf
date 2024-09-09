@@ -9,9 +9,9 @@ terraform {
 
 
 provider "aws" {
-  region     = "us-east-1"        # exact region for resources
-  access_key = var.aws_access_key # Generated key
-  secret_key = var.aws_secret_key # Generated secret-key
+  # region     = "us-east-1"        # exact region for resources
+  # access_key = var.aws_access_key # Generated key
+  # secret_key = var.aws_secret_key # Generated secret-key
 }
 
 # Define a variable for the access key
