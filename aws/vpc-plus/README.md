@@ -3,7 +3,7 @@
 This branch contains Terraform scripts for setting up AWS infrastructure including VPC, subnets, internet gateway, route tables, security groups, VM instances, and the initial startup script to run on the VM. The goal is to automate the deployment of a network environment in AWS with proper security measures and access configurations.
 
 ## Project Structure
-
+```
 automation
 └── AWS
    └── aws-terraform-vpc-setup
@@ -13,6 +13,7 @@ automation
       ├── scripts
       ├──startup.sh
       └── README.md
+```
 
 ## Features
 
