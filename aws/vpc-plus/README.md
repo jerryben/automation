@@ -39,7 +39,7 @@ automation
 
    ```bash
    git clone https://github.com/jerryben/automation.git
-   cd automation/AWS/aws-terraform-vpc-setup
+   cd automation/AWS/aws-terraform-vpc-subnet-instance-setup
    ```
 
 2. Initialize Terraform.
