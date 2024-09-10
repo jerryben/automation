@@ -6,13 +6,13 @@ This branch contains Terraform scripts for setting up AWS infrastructure includi
 
 automation
 └── AWS
-└── aws-terraform-vpc-setup
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── scripts
-├──startup.sh
-└── README.md
+   └── aws-terraform-vpc-setup
+      ├── main.tf
+      ├── variables.tf
+      ├── outputs.tf
+      ├── scripts
+      ├──startup.sh
+      └── README.md
 
 ## Features
 
@@ -22,7 +22,7 @@ automation
 - **Route Tables**: Configures route tables to direct traffic appropriately.
 - **Security Groups**: Creates security groups with specific rules for SSH and HTTP access.
 - **VM Instances**: Deploys EC2 instances with a public SSH key for secure access.
-- **Startup Script**: Executes a startup script on instance launch to set up the necessary environment.
+- **Startup Script**: Executes a startup script on instance launch to set up the nginx necessary environment.
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ To avoid unnecessary charges, remember to destroy the created infrastructure whe
 
 ```bash
 terraform destroy
-
+```
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-```
+
