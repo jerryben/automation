@@ -6,7 +6,7 @@ This branch contains Terraform scripts for setting up AWS infrastructure includi
 ```
 automation
 └── AWS
-   └── aws-terraform-vpc-setup
+   └── vpc-plus
       ├── main.tf
       ├── variables.tf
       ├── outputs.tf
