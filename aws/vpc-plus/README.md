@@ -38,7 +38,7 @@ automation
 1. Clone the repository and switch to the `aws-terraform-vpc-setup` branch.
 
    ```bash
-   git clone https://github.com/yourusername/automation.git
+   git clone https://github.com/jerryben/automation.git
    cd automation/AWS/aws-terraform-vpc-setup
    ```
 
